@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="com.ibm.dltj.jfst.stringNormalizer">
+      <normalizer
+            class="com.mnsuk.castudio.numbers.Numbers"
+            name="mnsuk.Numbers">
+            <description>Given a string representing a number (text or digits) it returns a string with the number represented as an unformatted decimal.</description>
+         <arguments
+               maxLength="2"
+               minLength="1">
+               <description>The first mandatory argument is a string with the number to be normalised. The second optional argument is an integer string specifying the output precision. The default is 2 digits.</description>
+         </arguments>
+      </normalizer>
+   </extension>
+
+</plugin>
